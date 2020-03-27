@@ -1,0 +1,60 @@
+.ideas{
+  margin-top: 80px;
+  padding-top: 80px;
+  background-color: #fbfaf8;
+
+  &__title{
+    display: block;
+    margin: 0;
+    font-family: @title-font;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: normal;
+    color:#555555;
+    text-align: center;
+
+  }
+
+  &__info{
+    margin: 0;
+    margin-top: 30px;
+    font-family: @default-font;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+    color: #8c8c8c;
+    text-align: center;
+
+  }
+  &__list{
+    .list-clear();
+    margin-top: 40px;
+    position: relative;
+
+    height: 482px;
+    overflow: hidden;
+  }
+  &__item{
+    position: absolute;
+    width: 70%;
+
+    &:nth-child(1){
+      z-index: 1;
+      left: 0;
+      top: 82px;
+    }
+    &:nth-child(2){
+      z-index: 2;
+      right: 0;
+      top: 82px;
+    }
+    &:nth-child(3){
+      z-index: 3;
+
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+}

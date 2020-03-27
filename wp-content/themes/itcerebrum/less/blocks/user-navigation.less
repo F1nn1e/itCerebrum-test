@@ -1,0 +1,27 @@
+.user-navigation{
+
+  .list-clear();
+  align-items: center;
+  display: flex;
+  margin-left: 64px;
+
+  @media (max-width: @desktop-width){
+    margin-left: 0;
+  }
+
+  &__item{
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+  }
+
+  &__icon{
+    width: 19px;
+    height: 25px;
+    object-fit: contain;
+
+  }
+
+}
