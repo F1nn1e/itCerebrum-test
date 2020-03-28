@@ -12,7 +12,7 @@ get_header();
         <?php $home_header=get_field('header')?>
         <?php if (isset($home_header)): ?>
          <div class="slider" id="home-slider">
-        <?  foreach($home_header['slides'] as $item): ?>
+        <?php  foreach($home_header['slides'] as $item): ?>
         <div class="slider__item" >
             <?php echo wp_get_attachment_image( $item['image']['ID'], 'full', false, array(
                 'class' => 'slider__image',
@@ -30,7 +30,7 @@ get_header();
         <?php $home_features=get_field('features')?>
         <?php if (isset($home_features)): ?>
         <ul class="features__list">
-             <? foreach($home_features['features'] as $item): ?>
+             <?php foreach($home_features['features'] as $item): ?>
              <li class="features__item">
                  <?php echo wp_get_attachment_image( $item['icon']['ID'], 'full', false, array(
                      'class' => 'features__icon',
